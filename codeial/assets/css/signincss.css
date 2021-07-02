@@ -1,0 +1,72 @@
+#signInDiv {
+  height: 400px;
+  width: 40%;
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  display: flex;
+  flex-direction: row; }
+  #signInDiv #signInDivHeader {
+    color: white;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 80%; }
+    #signInDiv #signInDivHeader #div1 {
+      margin-right: 10%; }
+    #signInDiv #signInDivHeader #div2 {
+      margin-left: 20%; }
+  #signInDiv #signInForm {
+    color: white;
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 30px; }
+    #signInDiv #signInForm .signItemDiv {
+      margin-bottom: 30px; }
+    #signInDiv #signInForm .signInFormInput {
+      background-color: inherit;
+      color: white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 150%; }
+    #signInDiv #signInForm .submitButton {
+      background-color: inherit;
+      color: ivory;
+      font-size: 20px;
+      border: 0px;
+      padding: 20px;
+      position: absolute;
+      left: 20%; }
+    #signInDiv #signInForm .submitButton:hover {
+      box-shadow: 1px 5px 10px black; }
+  #signInDiv #signUpDiv {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    color: white;
+    border-left: 2px solid grey;
+    padding-left: 10px;
+    font-size: 30px; }
+    #signInDiv #signUpDiv .signItemDiv {
+      margin-bottom: 30px; }
+    #signInDiv #signUpDiv .signInFormInput {
+      background-color: inherit;
+      color: white;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      width: 150%; }
+    #signInDiv #signUpDiv .submitButton {
+      background-color: inherit;
+      color: ivory;
+      font-size: 20px;
+      border: 0px;
+      padding: 20px;
+      position: absolute;
+      left: 40%;
+      top: 105%; }
+    #signInDiv #signUpDiv .submitButton:hover {
+      box-shadow: 1px 5px 10px black; }

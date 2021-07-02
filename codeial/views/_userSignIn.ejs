@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/signincss.css">
+
+<div id='signInDiv'>
+<div id='signInDivHeader'>
+        <div id="div1">
+        <h1>Sign In</h1>
+        </div>
+        <div id="div2">
+            <h1>Sign Up</h1>
+        </div>
+    </div>
+    <form action="/users/createsession" method="post" id="signInForm">
+    <div class='signItemDiv'>
+    <label class="signFormLabel">Email</label><br>
+    <input type="email" name="email" class="signInFormInput">
+    </div>
+    <div class='signItemDiv'>
+    <label class="signFormLabel">Password</label><br>
+    <input type="password" name="password" class="signInFormInput">
+    </div>
+    <button type="submit" class="submitButton">Submit</button>
+</form>
+<div id="signUpDiv">
+    
+<form action="/users/create" method="POST" id="signUpForm">
+    <div class='signItemDiv'>
+    <label>Email</label><br>
+    <input type="email" name="email" class="signInFormInput">
+    </div>
+    <div class='signItemDiv'>
+    <label>Password</label><br>
+    <input type="password" name="password" class="signInFormInput">
+    </div>
+    <div class='signItemDiv'>
+    <label>Confirm Password</label><br>
+    <input type="password" name='confirmPassword' class="signInFormInput">
+    </div>
+    <div class='signItemDiv'>
+    <label>Name</label><br>
+    <input type="text" name="name" class="signInFormInput">
+    </div>
+    <button type="submit" class="submitButton">Submit</button>
+</form>
+</div>
+</div>

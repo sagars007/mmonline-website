@@ -1,0 +1,111 @@
+@import './variables';
+
+#signInDiv
+{
+    // background-color: white;
+    // background-size: contain;
+    height: 400px;
+    width: 40%;
+    // border: 2px solid black;
+    // border-radius: 8%;
+    position: absolute;
+    top:15%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+    #signInDivHeader
+    {
+        color: white;
+        margin-left:20%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 80%;
+        #div1
+        {
+            margin-right: 10%;
+        }
+        #div2
+        {
+            margin-left: 20%;
+        }
+    }
+    #signInForm
+    {
+        color: white;
+        position: absolute;
+        top:25%;
+        left:10%;
+        font-size: $size;
+        .signItemDiv
+        {
+            margin-bottom:30px;
+        }
+        .signInFormInput
+        {
+            background-color:inherit;
+            color: white;
+            border-top: none;
+            border-left: none;
+            border-right:none;
+            width:150%;
+        }
+        .submitButton
+        {
+            background-color: inherit;
+            color: ivory;
+            font-size: 20px;
+            border: 0px;
+            // box-shadow: 1px 5px 10px black;
+            padding: 20px;
+            position: absolute;
+            left: 20%;
+        }
+        .submitButton:hover{
+            box-shadow: 1px 5px 10px black;
+
+        }
+        
+
+    }
+    #signUpDiv
+    {
+        position: absolute;
+        top: 25%;
+        left:55%;
+        color: white;
+        border-left: 2px solid grey;
+        padding-left: 10px;
+        font-size: $size;
+        .signItemDiv
+        {
+            margin-bottom:30px;
+        }
+        .signInFormInput
+        {
+            background-color: inherit;
+            color: white;
+            border-top: none;
+            border-left: none;
+            border-right:none;
+            width:150%;
+        }
+        .submitButton
+        {
+            background-color: inherit;
+            color: ivory;
+            font-size: 20px;
+            border: 0px;
+            // box-shadow: 1px 5px 10px black;
+            padding: 20px;
+            position: absolute;
+            left:40%;
+            top:105%;
+        }
+        .submitButton:hover{
+            box-shadow: 1px 5px 10px black;
+
+        }
+    }
+    
+}

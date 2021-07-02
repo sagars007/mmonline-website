@@ -1,0 +1,60 @@
+@import './variables';
+
+@mixin  border($val) {
+    border:$val solid black;
+}
+@mixin  position($val,$top,$left,$right,$bottom)
+{
+    position: $val;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+@mixin flex($dir,$con) {
+    
+    flex-direction: $dir;
+    justify-content: $con;
+    
+}
+
+footer
+{
+    @include flex(row,null);
+    @include position(absolute,null,0%,null,0%);
+    margin-bottom: 0px;
+    // box-shadow: 1px 5px 10px #80b5bd;
+    height: 70px;
+    color:black;
+    // background-image: $headerbackground;
+    width: 100%;
+    .footercon{
+        display: inline-block;
+        a{
+            color:white;
+            // @include border(2px);
+            font-size: 24px;
+        }
+
+    }
+    #one
+    {
+        @include position(absolute,20%,3%,null,null);
+    }
+    #two
+    {
+        @include position(absolute,20%,12%,null,null);
+    }
+
+}
+
+/*#otpbar
+{
+    position: absolute;
+    top:-134%;
+    left:53%;
+    font-size: 21.5px;
+    font-style: italic;
+    color: greenyellow;
+   
+}*/

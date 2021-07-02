@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="/css/userCss.css">
+<div id="profileBodySection">
+    
+    <div id='updateFormBox'>
+    <%if(user.id==profile_user.id){%>
+        <form action="/users/update/<%=profile_user.id%>" method="POST" enctype="multipart/form-data">
+            <div class="formBox">
+                <div class="UpdateForm">
+                <label>Name</label><br>
+                <input type="text" name="name" value="<%=profile_user.name%>" required><br>
+                </div>
+                <div class="UpdateForm">
+                <label>Email</label><br>
+                <input type="text" name="email" value="<%=profile_user.email%>" required><br>
+                </div>
+                <div class="UpdateForm">
+                    <label>Caste</label><br>
+                    <input type="text" name="caste" value="<%=profile_user.caste%>" required><br>
+                    </div>
+                <div class="UpdateForm">
+                    <label>Gender</label><br>
+                    <input type="text" name="gender" value="<%=profile_user.gender%>" required><br>
+                    </div>
+                <div class="UpdateForm">
+                        <label>Country</label><br>
+                        <input type="text" name="country" value="<%=profile_user.country%>" required><br>
+                        </div>
+                <div class="UpdateForm">
+                        <label>Occupation</label><br>
+                        <input type="text" name="occup" value="<%=profile_user.occup%>" required><br>
+                        </div>
+                        <div class="UpdateForm">
+                            <label>Education</label><br>
+                            <input type="text" name="edu" value="<%=profile_user.edu%>" required><br>
+                            </div>
+                        <div class="UpdateForm">
+                                <label>Star Sign</label><br>
+                                <input type="text" name="ssign" value="<%=profile_user.ssign%>" required><br>
+                                </div>
+                        <div class="UpdateFormAbout">
+                            <label for="moreabout">Tell more about yourself</label><br>
+                            <!input type="text" name="moreabout" value="<%=profile_user.moreabout%>" required>
+                            <textarea id="moreabout" name="moreabout" cols="22" rows="5" value="<%=profile_user.moreabout%>" required></textarea><br>
+                            </div>
+                <div class="UpdateForm">
+                <label>Upload the Photo</label><br>
+                <input type="file" name="avatar" placeholder="profile Picture"><br>
+                </div>
+                <input type="submit" value="Upload">
+            </div>
+        </form>
+        <%}%>
+    </div>
+    <div id='imgBox'>
+        <%if(profile_user.id==user.id){%>
+        <img src="<%=user.avatar%>" alt="<%=user.name%>" height="300px" width="300px">
+        <%}else{%>
+            <div id='imgBox2'>
+                <div id='box1'>
+                <img src="<%=profile_user.avatar%>" alt="<%=profile_user.name%>" height="300px" width="100px">
+                </div>
+                <div id='box2'>
+                 <u>Name:</u> &nbsp;&nbsp;<%=profile_user.name%> <br><u>email:</u>&nbsp;&nbsp;<%=profile_user.email%><br> <u>Caste:</u>&nbsp;&nbsp;<%=profile_user.caste%> <br><u>gender:</u>&nbsp;&nbsp;<%=profile_user.gender%><br>
+                 <u>country:</u>&nbsp;&nbsp;<%=profile_user.country%><br><u>Occupation:</u>&nbsp;&nbsp;<%=profile_user.occup%><br> <u>Education:</u>&nbsp;&nbsp;<%=profile_user.edu%><br> <u>Star Sign:</u>&nbsp;&nbsp;<%=profile_user.ssign%>
+                 <br><br><u>More about me:</u><br><%=profile_user.moreabout%>
+                 </div>
+                 
+            <%}%>
+            </div>
+    </div>
+</div>
+<div id='likeimg'>
+<img src="https://i.ibb.co/7kJHjvZ/like-btn-trn.png" alt="like btn" height="45px" width="45px">
+</div> 
+ 

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Welcome to MM ONLINE! | Find your partner online</title>
+        <link rel="stylesheet" href="/css/mainlayout.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+        <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAALAArZyLAAAAAAD///8Aa2trAAAA/wApzD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIAIiUCIiIiIgAiIAIiIiIiACIgAiIiIiIAVVUCIiIiIgVVVVIiIiICBVVVUiIiIgIFUiIiIiIiUgUkREQiIiIiVSQRESJiIiJVJBMzImIiIlVSIiImYiIiVVVVUmYiIiIiIiImYiIiIiJVVmYiIiIiIlVmIiIiIiIiVWIiIiLhDwAA4Q8AAOAPAADgDwAAgA8AAIAPAACADwAAgAcAAIAFAADgBQAA4AkAAOADAADwBwAA/A8AAPw/AAD8fwAA" rel="icon" type="image/x-icon" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <%-style%>
+    </head>
+    <body>
+        <%-include('_header')-%>
+        
+        <%- body %>
+        <%-include('_footer')-%>
+        <script>
+             /*<%if(flash.success && flash.success.length>0){%>
+                new Noty({
+                theme:'relax',
+                text: '<%=flash.success%>',
+                type:'success',
+                layout:'topRight',
+                timeout:1500
+                
+            }).show();
+            
+            <%}%>
+            <%if(flash.error && flash.error.length>0){%>
+                new Noty({
+                theme:'relax',
+                text: '<%=flash.error%>',
+                type:'error',
+                layout:'topRight',
+                timeout:1500
+                
+            }).show();
+            
+            <%}%>*/
+        </script>
+</html>

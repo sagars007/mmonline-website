@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/css/header.css">
+        <header>
+            <div id="tittle">
+                <h1><u><i>MM ONLINE</h1></u></i>
+                
+                
+            </div>
+            <div id="fancyline">
+                <hr>
+            </div>
+            <div id="nav">
+                <ul>
+                    <% if (locals.user){%>
+                        <li>Welcome-<%=user.name%>!</li>
+                        <li>
+                            <a href="/users/signout">Signout</a>
+                        </li>
+
+                    <%}else{%>
+                        <!below sign up href is in comments>
+                        <!li><!a href="/users/signup"><!sign up><!/a><!/li>
+                        <li><a href="/users/signin">Log In or Sign Up</a></li>
+                        <%}%>
+                </ul>
+            </div>
+        </header>
+    

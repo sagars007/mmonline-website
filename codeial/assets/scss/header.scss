@@ -1,0 +1,75 @@
+@import './variables';
+
+@mixin  border($val) {
+    border:$val solid black;
+}
+@mixin  position($val,$top,$left,$right)
+{
+    position: $val;
+    top: $top;
+    left: $left;
+    right: $right;
+}
+@mixin flex($dir,$con) {
+    
+    flex-direction: $dir;
+    justify-content: $con;
+    
+}
+
+
+header
+{
+    // box-shadow: 1px 5px 10px #80b5bd;
+    height: 70px;
+    @include position(relative,0%,0%,0%);
+    color:white;
+    // background-image: $headerbackground;
+    margin-bottom: 10px;
+    #tittle
+    {
+        width:30%;
+        display: inline-block;
+        h1
+        {
+            font-size: 25px;
+            display: inline-block;
+            
+        }
+        @include position(relative, 10%,3% , 0%);   
+    }
+    #nav{
+        width: 20%;
+            @include flex(row,space-between);
+            @include position(absolute,0%,NULL,2%);
+            padding: 0%;
+            height: 50px; 
+        ul{
+            list-style: none;
+            display: flex;
+            width: 100%;
+            li{
+                display: inline-block;
+                padding: 10px;
+                height:10px;  
+            a{
+                    text-decoration: none;
+                    color: white;
+                    font-size:$headerfontSize;
+                }
+            }
+            li:hover{
+                background-color:skyblue;
+                border-radius:5px;
+            }
+        }
+    }
+    #fancyline{
+        hr
+        {
+        border: 3px dashed pink;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;}
+        }
+}

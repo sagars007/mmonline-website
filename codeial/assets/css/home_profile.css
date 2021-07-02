@@ -1,0 +1,107 @@
+.class1 {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: black; }
+
+.remClass {
+  display: none; }
+
+#contenthead {
+  background-color: white;
+  position: relative;
+  height: 450px;
+  width: 45%;
+  top: 5%;
+  left: 25%;
+  border-radius: 10%;
+  display: flex;
+  background-image: url("Blue-and-purple.jpg");
+  background-size: contain; }
+  #contenthead .left {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    overflow: scroll;
+    font-family: monospace;
+    font-size: 20px; }
+  #contenthead .center {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    overflow: scroll;
+    font-family: monospace;
+    font-size: 20px; }
+  #contenthead .right {
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    overflow: scroll;
+    font-family: monospace;
+    font-size: 20px; }
+
+#navButtons {
+  position: absolute;
+  top: 78%;
+  left: 42%; }
+  #navButtons button {
+    height: 50px;
+    width: 80px;
+    background-color: inherit;
+    color: white;
+    border: none; }
+  #navButtons button:hover {
+    box-shadow: 1px 5px 10px black; }
+
+.userImage {
+  vertical-align: top; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+#user-friends {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  left: 30%;
+  top: 8%;
+  height: 400px; }
+
+#searchBar {
+  position: absolute;
+  top: 3%;
+  left: 52%;
+  color: white; }
+  #searchBar button {
+    border: none; }
+
+#boxinfo {
+  background: transparent;
+  width: 300px;
+  height: 280px;
+  border: 4px solid pink;
+  color: white;
+  font: 15px Lucida Handwriting, sans-serif;
+  border-radius: 6px;
+  padding: 50px;
+  position: absolute;
+  right: 8%;
+  top: 20%; }
+  #boxinfo img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 124px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }

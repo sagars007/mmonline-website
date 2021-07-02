@@ -1,0 +1,33 @@
+footer {
+  flex-direction: row;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  margin-bottom: 0px;
+  height: 70px;
+  color: black;
+  width: 100%; }
+  footer .footercon {
+    display: inline-block; }
+    footer .footercon a {
+      color: white;
+      font-size: 24px; }
+  footer #one {
+    position: absolute;
+    top: 20%;
+    left: 3%; }
+  footer #two {
+    position: absolute;
+    top: 20%;
+    left: 12%; }
+
+/*#otpbar
+{
+    position: absolute;
+    top:-134%;
+    left:53%;
+    font-size: 21.5px;
+    font-style: italic;
+    color: greenyellow;
+   
+}*/

@@ -1,0 +1,90 @@
+body {
+  background-image: url("unnamed.jpg"); }
+  body ::-webkit-scrollbar {
+    width: 8px; }
+  body ::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, black 11%, rebeccapurple 54%, #00ffdc 77%); }
+  body ::-webkit-scrollbar-thumb {
+    background: transparent;
+    box-shadow: 0px 0px 0px 100000vh #808080; }
+
+#profileBodySection {
+  width: 50%;
+  border-radius: 20px;
+  background-color: inherit;
+  position: relative;
+  left: 23%;
+  top: 12%;
+  height: auto;
+  display: flex;
+  color: white;
+  font-size: 30px; }
+  #profileBodySection #updateFormBox {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 400px; }
+  #profileBodySection .formBox {
+    margin-left: 50px; }
+  #profileBodySection .UpdateForm {
+    margin-bottom: 20px; }
+  #profileBodySection .UpdateFormAbout {
+    margin-bottom: 20px; }
+  #profileBodySection .UpdateForm input {
+    background-color: inherit;
+    color: white;
+    border: 0px; }
+  #profileBodySection .UpdateFormAbout textarea {
+    background-color: inherit;
+    color: white;
+    border: 0px;
+    padding: 20px; }
+  #profileBodySection #updateFormBox {
+    display: inline-block; }
+  #profileBodySection #imgBox {
+    display: inline-block; }
+    #profileBodySection #imgBox img {
+      position: relative;
+      left: 4%;
+      height: 300px;
+      width: 400px;
+      display: inline-block; }
+
+#home-container {
+  color: white;
+  position: relative;
+  left: 40%;
+  top: 14%; }
+
+#imgbox2 {
+  display: flex; }
+
+#box1 {
+  position: relative;
+  left: -30%; }
+
+#box2 {
+  position: relative;
+  left: -3%;
+  font-size: 24px; }
+
+#likeimg img {
+  padding: 5px;
+  position: absolute;
+  bottom: 158px;
+  left: 480px; }
+
+/*#searchinfo
+  {
+    background: transparent;
+    width: 320px;
+    height: 25px;
+    border: 2px solid greenyellow;
+    color: greenyellow;
+    font: 16px verdana, sans-serif;
+    //border-radius: 6px;
+    //padding: 50px;
+    //margin: 20px;
+    position: absolute;
+    right: 22%;
+    top: 3.5%;
+  }*/

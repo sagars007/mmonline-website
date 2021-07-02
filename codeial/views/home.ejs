@@ -1,0 +1,176 @@
+
+<link rel="stylesheet" href="/css/home_profile.css">
+<!-- <div id="home-container">
+        <section id="feed-posts">
+                <h4>Posts</h4>
+                <% if(locals.user){ %>
+                <form action="/posts/create" id="new-post-form" method="POST">
+                    <textarea name="content" cols="30" rows="3" placeholder="Type Here..." required></textarea>
+                    <input type="submit" value="Post">
+                </form>
+                <% } %>
+            
+                <div id="posts-list-container">
+                    <ul>
+                        <% for(post of posts){ %>
+                            
+                        <%- include('_post') -%>
+                            
+                        <%} %>
+                    </ul>
+                </div>
+            </section>
+            
+            
+            <section id="user-friends">
+                <h4>Friends</h4>
+                <% for(u of all_users){%>
+                    <p>
+                        <a href="/users/profile/<%= u.id %>"><%= u.name %></a>
+                    </p>
+                <% } %>
+            </section>
+    </div>
+     -->
+     <!-- <div id="ContentHead">
+         <div class='left'>
+           
+           <center><h1>AES algorithm:</h1></center>
+             java libraries color, bufferedimage,iofile,javax.imageIO
+
+            input image<br>
+            get width and height<br>
+            byte=width*height*RGB_size //pixelated in binary bit data and stored in tabular format<br>
+            for i,j in range(0,height/width):<br>
+            color=image.getRGB(j,i);<br>
+            byte r= getRed(); //Storing column wise for each R,G,B<br>
+            byte g= getGreen();<br>
+            byte b= getBlue();<br>
+            t[index++]=r/g/b; //Moving to next row of data<br>
+
+            For buffered image: we shift each pixelated data by 3 bytes<br>
+            for i,j in range(0,height/width):<br>
+            int r=t[index++] & shift by 3 bytes<br>
+            int g=t[index++] & shift by 3 bytes <br>
+            int b=t[index++] & shift by 3 bytes
+       
+         </div>
+         <div class='center'>
+            <CENTER><H1>Naor- Shamir algorithm: </H1></CENTER>
+                        // check if width + height are divisable by 2<br>
+            if (imgKey.getWidth() % 2 != 0) return null;<br>
+            if (imgKey.getHeight() % 2 != 0) return null;<br>
+            if (imgKey.getType() != BufferedImage.TYPE_INT_ARGB) {<br>
+                    BufferedImage raw_image = imgKey;<br>
+                    imgKey = new BufferedImage(raw_image.getWidth(), raw_image.getHeight(), BufferedImage.TYPE_INT_ARGB);<br>
+                    new ColorConvertOp(null).filter(raw_image, imgKey);<br>
+                }<br>
+            // check if image contains only black + transparent or white pixels<br>
+            // also count those<br>
+            long lAmountOfTotalPixels = 0;<br>
+            long lAmountOfBlackPixels = 0;<br>
+                    
+            for(int i = 0; i < imgKey.getHeight(); i++) {<br>
+            for(int j = 0; j < imgKey.getWidth(); j++) {<br>
+                int iRgb = imgKey.getRGB(j, i);<br>
+                // white to transparent<br>
+                    if(iRgb == Color.WHITE.getRGB()) {<br>
+                        imgKey.setRGB(j, i, 0x00FFFFFF);<br>
+                        iRgb = imgKey.getRGB(j, i);<br>
+                        }<br>
+                // check if pixel is either fully transparent or black<br>
+                    if(iRgb>>>24 == 0) {<br>
+                            ++lAmountOfTotalPixels;<br>
+                            } <br>
+                        else if (iRgb == Color.BLACK.getRGB()) {<br>
+                            ++lAmountOfTotalPixels;<br>
+                            ++lAmountOfBlackPixels;<br>
+                            } <br>
+                        else {<br>
+                        return null;<br>
+                    }<br>
+                            
+                        }<br>
+                    }
+         </div>
+         <div class='right'>
+            <CENTER><H1>One-time Pad: </H1></CENTER>
+            Optional parsing arguments:
+
+            parser=argparse.ArgumentParser(description="Visual cipher image generator")<br>
+            parser.add_argument("message",required=True,meta="Message image file path")<br>
+            parser.add_argument("secret",meta="Secret image file path")<br>
+            parser.add_argument("ciphered",meta="Ciphered image file path")<br>
+            parser.add_argument("resize",meta="Width, height")<br>
+            parser.add_argument("prepared message",meta="prepared message image file path")<br>
+            parser.add_argument("display",action="store_true")<br>
+            parser.add_argument("verbose",action="count")<br>
+            args=parser.parse_args() //Passing all the arguments.<br>
+            if args.resize:<br>
+            try:<br>
+                width, height= obtaining bitwise format of image pixels<br>
+            except:<br>
+                parser.error("Invalid format for resize option.")<br>
+            else:<br>
+                if:width or height is less than 0<br>
+                print Resize<br>
+                Function for generating secret image:<br>
+ 
+                width, height=size<br>
+                
+                for x,y in range(0,2*width/height,2):<br>
+                  if x is less than old_width and y is less than old_height:    //Generating the secret image by repositioning the pixels after<br>
+                    color=secret_image.getpixel(x,y)  //passing through rounds of input. <br>
+                  else:
+                     color=random.getrandombits(1)<br>
+                  new_secret_image.putpixel((x,y),color)<br>
+                return new_secret_image<br>
+                
+                Function for generating ciphered image:<br>
+                
+                width, height=prepared_image.size;<br>
+                for x,y in range(0,width*2,2):<br>
+                  secret=secret_image.getpixel(x,y)        //At the intermediate stage, we receive 2 half-encrypted images<br>
+                  message=prepared_image.getpixel(x/2,y/2) //Then we put one over another at an angle to receive ciphered image.<br>
+                  ciphered_image.putpixel((x,y),1-color)
+                return ciphered_image
+
+             
+        </div>
+    </div>
+    <DIV id='navButtons'>
+        <button type="submit" id="next">Next</button>
+        <button type="submit" id="prev">Previous</button>
+    </DIV> -->
+    <div id='boxinfo'> 
+        &emsp;&emsp;&emsp;<u>Welcome to MM ONLINE.<br><br></u>
+        We provide a platform to many Brides/Grooms for finding perfect match experience by exploring the various opportunities
+        to meet true potential partner. Keeping our goal in mind, we made an online matching offering to connect souls of many ppl around the world.
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNBtjMFN-ZffQKTRyLcdjXOQmx3oTdhsQMYA&usqp=CAU" alt="infopic">
+        </div>
+            <section id="user-friends">
+                
+                <% for(u of all_users){%>
+                    <p>
+                        <img src="<%=u.avatar%>" alt="<%=u.name%>"  height="100px" width="100px">
+                        <a href="/users/profile/<%= u.id %>" class="userImage"><%= u.name %></a>
+                    </p>
+                <% } %>
+            </section>
+            
+    <form action="/search" method="Post" id='searchBar'>
+    <label>Search for people</label>
+    <input type="text" name="search" placeholder="Search Here ....">
+    <button type="submit">Submit</button>
+    </form>
+
+   
+ 
+    <script src="/js/post_comment.js"></script>
+    <script src="/js/home_post.js"></script>
+    <script src='/js/homeContentnav.js'></script>   
+    
+  
+
+     
+      

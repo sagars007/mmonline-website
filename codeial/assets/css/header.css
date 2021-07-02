@@ -1,0 +1,48 @@
+header {
+  height: 70px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  color: white;
+  margin-bottom: 10px; }
+  header #tittle {
+    width: 30%;
+    display: inline-block;
+    position: relative;
+    top: 10%;
+    left: 3%;
+    right: 0%; }
+    header #tittle h1 {
+      font-size: 25px;
+      display: inline-block; }
+  header #nav {
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 0%;
+    left: NULL;
+    right: 2%;
+    padding: 0%;
+    height: 50px; }
+    header #nav ul {
+      list-style: none;
+      display: flex;
+      width: 100%; }
+      header #nav ul li {
+        display: inline-block;
+        padding: 10px;
+        height: 10px; }
+        header #nav ul li a {
+          text-decoration: none;
+          color: white;
+          font-size: 15px; }
+      header #nav ul li:hover {
+        background-color: skyblue;
+        border-radius: 5px; }
+  header #fancyline hr {
+    border: 3px dashed pink;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
